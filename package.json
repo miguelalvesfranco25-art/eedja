@@ -1,0 +1,24 @@
+{
+  "name": "eedja",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EEDJA — plataforma de estudos com IA da E.E. Dr. José Augusto.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node server/index.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "node scripts/lint.mjs",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-icons": "^5.6.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.7",
+    "typescript": "^6.0.3"
+  }
+}
