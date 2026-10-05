@@ -147,22 +147,18 @@ apaga o progresso de ninguém.
 
 **1. Colocar o projeto no GitHub** (o Render só publica a partir de um repositório Git)
 
-No Terminal do seu Mac (o normal, não precisa ser nada especial), dentro da pasta do projeto:
+A pasta `~/Desktop/eedja` já está preparada como um repositório Git local (isso já foi feito por
+mim — `git init`, `git add` e o primeiro commit já existem). Falta só criar o repositório lá no
+GitHub e enviar o que já está pronto.
+
+Crie uma conta grátis em **https://github.com** (se ainda não tiver) e, já logado, clique em
+**"New repository"**, dê o nome `eedja`, deixe como **Public** ou **Private** (os dois funcionam no
+plano grátis do Render) e **não** marque nenhuma opção de criar README/.gitignore (o projeto já tem
+os seus). Depois de criado, o GitHub mostra os comandos para ligar o projeto local a ele — abra o
+Terminal do seu Mac e rode:
 
 ```bash
 cd ~/Desktop/eedja
-git init
-git add .
-git commit -m "EEDJA — versão inicial"
-```
-
-Depois, crie uma conta grátis em **https://github.com** (se ainda não tiver) e, já logado, clique
-em **"New repository"**, dê o nome `eedja`, deixe como **Public** ou **Private** (os dois funcionam
-no plano grátis do Render) e **não** marque nenhuma opção de criar README/.gitignore (o projeto já
-tem os seus). Depois de criado, o GitHub mostra os comandos para ligar o projeto local a ele —
-algo como:
-
-```bash
 git remote add origin https://github.com/SEU-USUARIO/eedja.git
 git branch -M main
 git push -u origin main
