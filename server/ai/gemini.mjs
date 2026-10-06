@@ -9,7 +9,7 @@
 // para forçar JSON), mas o primeiro teste de ponta a ponta precisa acontecer
 // com o app rodando fora desta sandbox, com uma chave válida.
 
-const DEFAULT_MODEL = "gemini-2.0-flash";
+const DEFAULT_MODEL = "gemini-3.8-flash";
 
 function buildPrompt({ subjectName, topic, sourceType, text }) {
   const topicLine = topic && topic.trim() ? `Tópico específico: "${topic.trim()}".` : "Nenhum tópico específico foi informado — identifique o assunto a partir do material.";
